@@ -9,5 +9,17 @@ func mapHandler() {
 
 	user["age"] = "age"
 	fmt.Println(user)
+	fmt.Println(user)
+
+	value, ok := user["name"]
+	if ok {
+		fmt.Println(value)
+	} else {
+		fmt.Println("key does not exits")
+	}
+
+	for key, value := range user {
+		fmt.Print((value), key)
+	}
 
 }
